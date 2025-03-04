@@ -4,9 +4,9 @@ import { GlobalConfigCollection } from "./collections/global-config";
 import { PageCollection } from "./collections/page";
 
 export default defineConfig({
-  branch: "main",
-  clientId: "1de24bf3-0670-4af7-ac85-0cfca3ad7902",
-  token: "6895fa6c887cb4d203ced878326e6908c6fbc55a",
+  branch: process.env.VERCEL_COMMIT_GIR_REF || "",
+  clientId: process.env.PUBLIC_TINA_CLIENT_ID || "",
+  token: process.env.TINA_TOKEN || "",
 
   build: {
     outputFolder: "admin",
