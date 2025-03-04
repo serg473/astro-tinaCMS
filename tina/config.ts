@@ -4,9 +4,9 @@ import { GlobalConfigCollection } from "./collections/global-config";
 import { PageCollection } from "./collections/page";
 
 export default defineConfig({
-  branch: process.env.PUBLIC_TINA_BRANCH,
-  clientId: process.env.PUBLIC_TINA_CLIENT_ID,
-  token: process.env.PUBLIC_TINA_TOKEN,
+  branch: import.meta.env.PUBLIC_TINA_BRANCH,
+  clientId: import.meta.env.PUBLIC_TINA_CLIENT_ID,
+  token: import.meta.env.PUBLIC_TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
