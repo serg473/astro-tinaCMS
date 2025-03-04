@@ -5,8 +5,8 @@ import { PageCollection } from "./collections/page";
 
 export default defineConfig({
   branch: process.env.PUBLIC_TINA_BRANCH,
-  clientId: process.env.TINA_CLIENT_ID,
-  token: process.env.TINA_TOKEN,
+  clientId: process.env.PUBLIC_TINA_CLIENT_ID,
+  token: process.env.PUBLIC_TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
