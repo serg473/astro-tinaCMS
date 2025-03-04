@@ -4,7 +4,7 @@ import { GlobalConfigCollection } from "./collections/global-config";
 import { PageCollection } from "./collections/page";
 
 export default defineConfig({
-  branch: process.env.TINA_BRANCH,
+  branch: process.env.VERCEL_GIT_COMMIT_REF,
   clientId: process.env.TINA_CLIENT_ID,
   token: process.env.TINA_TOKEN,
 
