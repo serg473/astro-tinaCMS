@@ -4,9 +4,9 @@ import { GlobalConfigCollection } from "./collections/global-config";
 import { PageCollection } from "./collections/page";
 
 export default defineConfig({
-  branch: process.env.VERCEL_GIT_COMMIT_REF,
-  clientId: process.env.TINA_CLIENT_ID,
-  token: process.env.TINA_TOKEN,
+  branch: "main",
+  clientId: import.meta.env.PUBLIC_TINA_CLIENT_ID,
+  token: import.meta.env.PUBLIC_TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
