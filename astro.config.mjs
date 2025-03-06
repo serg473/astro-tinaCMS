@@ -7,7 +7,7 @@ import tinaDirective from "./astro-tina-directive/register";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-tina-cknkvry51-sergios-projects-663b3eb6.vercel.app",
+  site: process.env.SITE_URL || `https://${process.env.VERCEL_URL}`,
   integrations: [mdx(), sitemap(), react(), tinaDirective()],
   redirects: {
     "/admin": "/admin/index.html",
