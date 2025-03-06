@@ -7,7 +7,7 @@ import tinaDirective from "./astro-tina-directive/register"
 
 // https://astro.build/config
 export default defineConfig({
-	site: import.meta.env.PUBLIC_VERCEL_URL,
+	site: import.meta.env.VITE_PUBLIC_VERCEL_URL,
 	integrations: [mdx(), sitemap(), react(), tinaDirective()],
 	redirects: { 
 		'/admin': '/admin/index.html'
