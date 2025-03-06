@@ -6,7 +6,7 @@ import react from "@astrojs/react";
 import tinaDirective from "./astro-tina-directive/register";
 
 // https://astro.build/config
-export default defineConfig({
+export default defineConfig({ 
   site: process.env.SITE_URL || `https://${process.env.VERCEL_URL}`,
   integrations: [mdx(), sitemap(), react(), tinaDirective()],
   redirects: {
