@@ -46,6 +46,16 @@ export default defineConfig({
             label: "Body",
             isBody: true,
           },
+          {
+            name: "featuredImage",
+            label: "Featured Image",
+            type: "image", // Поле для загрузки изображения
+          },
+          {
+            name: "body_text",
+            label: "Body_text",
+            type: "rich-text", // Редактор форматированного текста
+          },
         ],
       },
     ],
